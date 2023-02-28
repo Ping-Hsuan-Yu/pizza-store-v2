@@ -1,0 +1,124 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #fff;
+}
+
+.slider,
+.slides {
+    height: calc(100vh - 56px) !important;
+}
+
+.indicators {
+    display: none;
+}
+
+@media (min-width: 601px) {
+    div.map {
+        display: flex;
+        align-items: center;
+    }
+
+    div div div iframe {
+        margin-top: 6px;
+    }
+}
+
+div.col {
+    transition: .3s ease opacity, .3s ease transform, .3s ease box-shadow;
+}
+
+.rice, .pasta, .meat {
+    display: none;
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+.cart-btn {
+    position: relative;
+}
+
+#totalQuantity {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    right: 105px;
+    bottom: 35px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    transition: .3s ease opacity, .3s ease transform, .3s ease box-shadow;
+}
+
+#totalQuantity-s {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    right: 50px;
+    bottom: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    transition: .3s ease opacity, .3s ease transform, .3s ease box-shadow;
+}
+
+.tabs .tab a {
+    color: #ff9100a0;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+    color: #ff8f00;
+}
+
+.tabs .indicator {
+    background-color: #ff8f00;
+}
+
+.page-footer .footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    height: 64px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.logo {
+    margin-top: 13px;
+    height: 40px;
+}
+
+@media (min-width:992px) {
+    .logo {
+        margin-left: 10px;
+    }
+}
+
+.price {
+    font-size: x-large;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.card-content p {
+    min-height: 7rem;
+}
